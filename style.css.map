@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,kBAAkB;ACFlB;;gFAEgF;AAGhF;;4CAE4C;ADF5C,eAAe;AAEf,iBAAiB;AAEjB,kBAAkB;AAElB,iBAAiB;AAEjB,oBAAoB;AEbpB,AAAA,IAAI,CAAC;EACD,gBAAgB,EDWN,OAAO;CCVpB;;AFcD,mBAAmB",
+    "sources": [
+        "style.scss",
+        "stylse/01-settings/_settings.colors.scss",
+        "stylse/06-components/_components.body.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

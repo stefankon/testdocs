@@ -1,0 +1,52 @@
+
+.c-main-info,
+.c-main-program {
+    .o-page-wrapper {
+        display: inherit;
+        margin: 40px auto;
+    }
+
+    &__card {
+        // padding: 32px 0;
+        &-header {
+            display: flex;
+            margin: 0 auto;
+
+            h2 {
+                margin: 0;
+            }
+            &--logo {
+                display: flex;
+                flex-flow: column wrap;
+                align-self: start;
+                margin-right: 18px;
+
+                .logo-group {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-self: start;
+                    // margin-right: 18px;
+                }
+            }
+        }
+        &-body {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 auto;
+        }
+    }
+}
+
+.c-separator {
+   display: flex;
+   position: relative;
+   z-index: 1;
+
+    &--primary {
+        display: grid;
+        grid-row: 1fr;
+        border-bottom: 10px dotted $primary-50;
+        height: 10px;
+        width: 100%;
+    }
+}

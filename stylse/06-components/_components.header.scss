@@ -1,0 +1,57 @@
+.c-header {
+    display: block;
+    position: relative;
+    min-height: 75px;
+    @include BoxShadow(2);
+
+    .o-page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 150px;
+        min-height: 75px;
+        align-content: center;
+        justify-items: start;
+    }
+
+    &-navbar {
+        display: flex;
+        justify-items: center;
+    }
+}
+
+.c-logo {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    justify-content: start;
+    align-content: center;
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &--text {
+            color: $grey-700;
+            font-size: 32px;
+            line-height: 22px;
+            @include for-desktop-up {
+                color: $secondary-800;
+            }
+        }
+    }
+    &__vertical {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        @include for-desktop-up {
+            display: none;
+        }
+    }
+    &__horizontal {
+        display: none;
+        justify-items: center;
+        align-items: center;
+        @include for-desktop-up {
+            display: flex;
+        }
+    }
+}

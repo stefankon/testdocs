@@ -1,0 +1,77 @@
+.c-navigation {
+    position: relative;
+
+    &__hidden-menu {
+        display: none;
+        @include for-desktop-up {
+            display: grid;
+            grid-template-columns: 200px;
+            position: relative;
+        }
+        &--show {
+            display: block;
+        }
+    }
+
+    &__header {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1px;
+        position: absolute;
+        top: 55px;
+        padding: 35px 20px;
+        left: 1em;
+        width: 100vw;
+        background-color: $grey-50;
+        @include BoxShadow(3);
+        @include for-desktop-up {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-content: end;
+            align-items: center;
+            align-self: center;
+            column-gap: 24px;
+            grid-template-rows: 1fr;
+            box-shadow: none;
+            background-color: $backgroud-white;
+            position: relative;
+            top: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            width: fit-content;
+        }
+
+       
+    }
+
+    &__item {
+        list-style: none;
+        padding: 5px;
+        a {
+            text-decoration: none;
+            color: $grey-700;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: $secondary-800;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__sadwich-menu {
+        display: grid;
+        // position: relative;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-self: end;
+        column-gap: 24px;
+
+        &--wrapper {
+            @include for-desktop-up {
+                display: none;
+            }
+        }
+    }
+}

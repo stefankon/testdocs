@@ -1,0 +1,108 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato-Regular'), url('../../fonts/lato/latoregular.woff2') format('woff2'), url('../../fonts/lato/latoregular.woff') format('woff'), url('../../fonts/lato/latoregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Medium'), local('Lato-Medium'), url('./../fonts/lato/latomedium.woff2') format('woff2'), url('./../fonts/lato/latomedium.woff') format('woff'), url('./../fonts/lato/latomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Semibold'), local('Lato-Semibold'), url('./../fonts/lato/latosemibold.woff2') format('woff2'), url('./../fonts/lato/latosemibold.woff') format('woff'), url('./../fonts/lato/latosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Bold'), local('Lato-Bold'), url('./../fonts/lato/latobold.woff2') format('woff2'), url('./../fonts/lato/latobold.woff') format('woff'), url('./../fonts/lato/latobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html,
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+a,
+button {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+a {
+  font-weight: 600;
+}
+
+p, .p-likes {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+button {
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, .h1-likes {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2, .h2-likes {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3, .h3-likes {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4, .h4-likes {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+h5, .h5-likes {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+

@@ -1,0 +1,48 @@
+.c-btn {
+    @include BoxShadow(3);
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    padding: 10px 22px;
+    text-transform: uppercase;
+
+    &--empty {
+        border: none;
+    }
+}
+
+.c-btn:hover {
+    cursor: pointer;
+    @include BoxShadow(1);
+}
+
+.c-btn--secondary {
+    display: flex;
+    background: $secondary-800;
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.c-btn--primary {
+    display: flex;
+    background: $secondary-800;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 16px 94px;
+}
+
+.c-btn--middle {
+    display: flex;
+    background: #fff;
+    color: $secondary-800;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 32px;
+    border: 1px solid $secondary-800;
+    box-shadow: none;
+}
