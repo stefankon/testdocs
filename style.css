@@ -1,18 +1,104 @@
-/* 01. Settings */
-/* ==========================================================================
-   #COLOR-VARIABLES
-   ========================================================================== */
-/* ======================================
-Custom Color Palette
-   ====================================== */
-/* 02. Tools */
-/* 03. Generic */
-/* 04. Elements */
-/* 05. Objects */
-/* 06. Components */
-body {
-  background-color: #00af9b;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 99. Utilities */
-/*# sourceMappingURL=style.css.map */
+body {
+  display: flex;
+  margin: auto;
+  padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  margin: auto;
+}
+
+legend {
+  background-color: #ffffff;
+  padding: 0 5px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.data-wrapper {
+  display: flex;
+}
+
+.form-example {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#height,
+#length,
+#width {
+  border: 1px solid cornflowerblue;
+  padding: 5px 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+  /* box-shadow: 2px 2px 5px 0.1px rgba(124,124,124,0.5); */
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  padding: 0 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cube,
+#surface,
+#diagonal {
+  background-color: rgb(34, 123, 238);
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  /* box-shadow: 2px 2px 5px 0.1px rgba(124,124,124,0.5); */
+}
+#cube {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -5px;
+}
+
+#cube:hover,
+#surface:hover,
+#diagonal:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#cube-result, #surface-result, #diagonal-result {
+  background-color: #ffffff;
+  width: 70px;
+  height: 25px;
+  border: 1px solid cornflowerblue;
+  text-align: center;
+  padding-top: 2px;
+  margin-left: -20px;
+}

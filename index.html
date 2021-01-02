@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="./style.css">
-</head>
+    </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium excepturi dicta inventore molestiae amet. Laborum officiis sunt facere iusto, similique commodi fugit fuga. Atque sequi laborum facere delectus corporis.
-    </p>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Calculate</legend>
+            <div class="data-wrapper">
+                <div class="form-example">
+                    <label for="height">Enter height: </label>
+                    <input type="number" name="height" id="height" required value="0">
+                </div>
+                <div class="form-example">
+                    <label for="length">Enter length: </label>
+                    <input type="number" name="length" id="length" required value="0"> 
+                </div>
+                <div class="form-example">
+                    <label for="width">Enter width: </label>
+                    <input type="number" name="width" id="width" required value="0">
+                </div>
+            </div>
+            <div class="result">
+                <button id="cube">cube</button>
+                <div id="cube-result">0</div>
+                <button id="surface">surface</button>
+                <div id="surface-result">0</div>
+                <button id="diagonal">diagonal</button>
+                <div id="diagonal-result">0</div>
+            </div>
+        </fieldset>
+    </form>
+    <script type="module" src="./main.js"></script>
 </body>
+
 </html>
